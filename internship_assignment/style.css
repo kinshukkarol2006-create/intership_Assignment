@@ -1,0 +1,186 @@
+body{
+font-family:'Inter',sans-serif;
+margin:0;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:black;
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+}
+
+.logo-icon{
+width:35px;
+height:35px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.nav-links a:hover{
+color:#ff6a00;
+}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:#ff6a00;
+color:white;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 24px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+.hero button:hover{
+background:#333;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section h2{
+margin-bottom:20px;
+}
+
+
+/* CARDS */
+
+.cards{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+flex:1;
+min-width:250px;
+background:#f4f4f4;
+padding:25px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+max-width:400px;
+}
+
+input,textarea{
+padding:10px;
+font-size:16px;
+}
+
+button{
+background:#ff6a00;
+border:none;
+color:white;
+padding:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:black;
+}
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:white;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:900px){
+
+.cards{
+flex-direction:column;
+}
+
+}
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.nav-links{
+flex-direction:column;
+gap:12px;
+margin-top:10px;
+}
+
+.hero{
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+}
